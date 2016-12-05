@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2016-06-13T11:38:43.275+08:00"
+        cq:lastModifiedBy="admin"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="HP Marketing Document Library"/>
+    <search/>
+    <admin
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="cq/search/components/suggest/admin">
+        <test
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="cq/search/components/suggest"
+            expiryTime="{Long}0"
+            spellCheck="{Boolean}true"/>
+    </admin>
+</jcr:root>

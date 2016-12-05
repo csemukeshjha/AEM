@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2016-06-13T13:59:15.181+08:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/apps/hpe-dam/templates/assetshare"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Search"
+        sling:resourceType="hpe-dam/components/page-types/assetshare">
+        <querybuilder
+            jcr:lastModified="{Date}2016-06-13T12:05:59.119+08:00"
+            jcr:lastModifiedBy="admin"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="dam/components/assetshare/querybuilder"
+            editorPath="./assetviewer"
+            limit="24"
+            path="[/content/dam/geometrixx/documents,/content/dam/geometrixx/portraits,/content/dam/geometrixx/icons,/content/dam/geometrixx/movies]">
+            <left
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys">
+                <options
+                    jcr:created="{Date}2016-06-13T12:06:17.305+08:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2016-06-13T13:59:15.175+08:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="cq/search/components/predicates/options"
+                    collapse="level1"
+                    optionsPath="/libs/dam/options/predicates/mimetypes"/>
+            </left>
+        </querybuilder>
+        <lenses
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="foundation/components/parsys">
+            <list
+                jcr:created="{Date}2016-06-13T12:04:46.006+08:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2016-06-13T12:04:46.006+08:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="/apps/hpe-dam/components/lenses/list"/>
+        </lenses>
+    </jcr:content>
+    <asseteditor/>
+    <assetviewer/>
+</jcr:root>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <!--<filter root="/apps/hpe-dam"/>-->
+    <filter root="/apps/hpe-pmaster"/>
+    <filter root="/apps/sling/servlet/errorhandler"/>
+
+   <!-- <filter root="/etc/clientlibs/hpe-dam"/> -->
+   <filter root="/etc/clientlibs/hpe-pmaster"/>
+
+    <filter root="/content/litserver"/>
+
+    <!--<filter root="/etc/designs/hpe-dam">-->
+    <filter root="/etc/designs/hpe-pmaster">
+        <include pattern="/etc/designs/hpe-dam/jcr:content"/>
+
+        <include pattern="/etc/designs/hpe-dam/jcr:content/clientlibs"/>
+        <include pattern="/etc/designs/hpe-dam/jcr:content/clientlibs/.*"/>
+
+    </filter>
+
+</workspaceFilter>
