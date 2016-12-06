@@ -637,10 +637,10 @@
             </activation>
             <properties>
                 <resources.env>DEV</resources.env>
-                <crx.host>g4t8805.houston.hpecorp.net</crx.host>
+                <crx.host>localhost</crx.host>
                 <crx.port>4502</crx.port>
                 <crx.user>admin</crx.user>
-                <crx.password>craZ82hvobv3rg</crx.password>
+                <crx.password>admin</crx.password>
             </properties>
         </profile>
         <profile>
